@@ -5,7 +5,7 @@
 
 Welcome to NJOY's documentation!
 ================================
-The documentation for NJOY is currently hosted on: `github.com/njoy/NJOY2016-manual <https://github.com/njoy/NJOY2016-manual>`.
+The documentation for NJOY is currently hosted on: `GitHub <https://github.com/njoy/NJOY2016-manual>`_.
 
 Keep this page bookmarked for additional information.
 
