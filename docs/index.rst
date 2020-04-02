@@ -5,7 +5,7 @@
 
 Welcome to NJOY's documentation!
 ================================
-The documentation for NJOY is currently hosted on: `GitHub <https://github.com/njoy/NJOY2016-manual>`_.
+The documentation for NJOY2016 is currently hosted on: `GitHub <https://github.com/njoy/NJOY2016-manual>`_.
 
 Keep this page bookmarked for additional information.
 
@@ -13,6 +13,7 @@ Keep this page bookmarked for additional information.
    :maxdepth: 2
    :caption: Contents:
 
+   Developers/index.rst
 
 
 Indices and tables
