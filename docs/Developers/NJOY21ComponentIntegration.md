@@ -145,8 +145,12 @@ This part is really easy.  In file `src/njoy21/modern/Sequence/routines.hpp` jus
       lipservice::MODULE command( stream );                                    \
       this->j##MODULE = command;                                               \
     }                                                                          \
-    void operator()( const nlohmann::json& args ){                             \
-      njoy::MODULE::MODULE{ std::move( this->j##MODULE ), args };              \
+    void operator()( std::ostream& output,                                     \
+                     std::ostream& error,                                      \
+                     const nlohmann::json& args ){                             \
+      njoy::MODULE::MODULE{}( std::move( this->j##MODULE ),                    \
+                              output, error,                                   \
+                              args );                                          \
     }                                                                          \
   };
 
@@ -161,6 +165,8 @@ In `src/njoy21/modern/Sequence/routines.hpp` we can see (although it's a bit obs
 class THERMR {
 public:
   void operator()( const nlohmann::json& njoyArgs, 
+                   std::ostream& output,
+                   std::ostream& error,
                    const nlohmann::json& args ){
     // Do something here
   }
@@ -172,20 +178,15 @@ njoyArgs[ "iprint" ];
 ```
 What is done with the parameters in `njoyArgs` is up to whoever wrote the component.
 
+The `output` argument is where messages about the processing should be "printed". In Legacy NJOY, this would be the `output` file. In NJOY21, the name of this file is specified using the `-o` or `--output` command-line argument.
+
+The `error` argument is similar to the `output` argument, except that error messages are written here. Error messages are messages written before NJOY crashes (hopefully gracefully).
+
 The `args` argument is another JSON object that contains an arbitrary set of options that are passed to every modern component. Right now this is just a placeholder for unknown future needs. 
 
 When that function finishes, NJOY21 continues by running the next module given in the input deck, so everything that needs to be done with the modern component must be taken care of in this call operator. Likely, this function just calls other functions to do the real work.
 
 ## 6. Adding new component as submodule to NJOY21
-Once the new component has been implemented (in a separate repository) it needs to be added to NJOY21. This is fairly straightforward
+Once the new component has been implemented (in a separate repository) it needs to be added to NJOY21. 
 
-1. Create a branch in NJOY21
-   `git checkout -b feature/THERMR`
-2. Add submodule
-   `git submodule add https://github.com/njoy/THERMR dependencies/THERMR`
-3. Update metaconfigure
-   `./metaconfigure/fetch_subprojects.py`
-   `./metaconfigure/generate.py cmake`
-4. Commit
-5. Push
-6. Create Pull Request
+Since we are currently improving our build system, the steps for this are still being developed.
