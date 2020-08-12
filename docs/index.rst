@@ -10,7 +10,7 @@ The documentation for NJOY2016 is currently hosted on: `GitHub <https://github.c
 Keep this page bookmarked for additional information.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
    Components/index.rst
