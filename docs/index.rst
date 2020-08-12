@@ -13,6 +13,7 @@ Keep this page bookmarked for additional information.
    :maxdepth: 2
    :caption: Contents:
 
+   Components/index.rst
    Developers/index.rst
 
 

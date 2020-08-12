@@ -24,6 +24,10 @@
 
 # -- General configuration ------------------------------------------------
 
+project = 'NJOY'
+copyright = '2019, Los Alamos National Laboratory'
+author = 'Jeremy Lloyd Conlin'
+
 # If your documentation needs a minimal Sphinx version, state it here.
 #
 # needs_sphinx = '1.0'
@@ -46,11 +50,6 @@ source_suffix = '.rst'
 
 # The master toctree document.
 master_doc = 'index'
-
-# General information about the project.
-project = 'NJOY'
-copyright = '2019, Jeremy Lloyd Conlin'
-author = 'Jeremy Lloyd Conlin'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
