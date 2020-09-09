@@ -13,6 +13,7 @@ Keep this page bookmarked for additional information.
    :maxdepth: 1
    :caption: Contents:
 
+   LegacyInputs.rst
    Components/index.rst
    Developers/index.rst
 
