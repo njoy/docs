@@ -15,7 +15,7 @@ Keep this page bookmarked for additional information.
 
    install.rst
    LegacyInputs.rst
-   Components/index.rst
+   components.rst
    Developers/index.rst
 
 
