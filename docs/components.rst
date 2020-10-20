@@ -16,6 +16,9 @@ There are many components that make up NJOY21, or that make up one of it's modul
 `ENDFtk <https://github.com/njoy/ENDFtk>`_
    Toolkit for working with ENDF-formatted files.
 
+`GNDStk <https://docs.njoy21.io/projects/GNDStk>`_
+   Toolkit for working with GNDS-formatted files.
+
 `resonanceReconstruction <https://github.com/njoy/resonanceReconstruction>`_
    Perform resonance reconstruction calculations for these formalisms
 
