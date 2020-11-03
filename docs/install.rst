@@ -12,7 +12,7 @@ For the impatient
 .. code:: bash
 
    # Download the latest version of the code
-   git clone https://github.com/njoy/NJOY21.git
+   git clone --branch v1.2.0 https://github.com/njoy/NJOY21.git
 
    cd NJOY21
 
@@ -20,10 +20,10 @@ For the impatient
    mkdir bin
    cd bin
 
-   # Build NJOY1
+   # Build NJOY21
    make
 
-   # Test NJOY1
+   # Test NJOY21
    make test
 
 Prerequisites
