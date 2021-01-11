@@ -43,7 +43,7 @@ build system and `git <https://git-scm.com>`__ for version control.
 
 Windows
 -------
-When building on Windows, we only support using the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/). The build system is the same.
+When building on Windows, we only support using the `Windows Subsystem for Linux <https://docs.microsoft.com/en-us/windows/wsl/>`__. The build system is the same.
 
 Build Process
 =============
