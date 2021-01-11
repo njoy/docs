@@ -41,6 +41,10 @@ build system and `git <https://git-scm.com>`__ for version control.
 -  `CMake 3.2+ <https://cmake.org/>`__
 -  `git 2.1+ <https://git-scm.com>`__
 
+Windows
+-------
+When building on Windows, we only support using the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/). The build system is the same.
+
 Build Process
 =============
 
