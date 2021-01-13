@@ -12,13 +12,14 @@ For the impatient
 .. code:: bash
 
    # Download the latest version of the code
-   git clone --branch v1.2.0 https://github.com/njoy/NJOY21.git
+   git clone --branch v1.2.1 https://github.com/njoy/NJOY21.git
 
    cd NJOY21
 
    # Configure the build process
    mkdir bin
    cd bin
+   cmake -D CMAKE_BUILD_TYPE=Release ..
 
    # Build NJOY21
    make
@@ -35,10 +36,9 @@ Development for NJOY uses the latest published language standards that are widel
 -  Fortran 2003 or higher
 -  `Python 3.4+ <https://python.org/>`__
 
-Additionally, we use `CMake <https://cmake.org/>`__ to configure the
-build system and `git <https://git-scm.com>`__ for version control.
+Additionally, we use `CMake <https://cmake.org/>`__ to configure the build system and `git <https://git-scm.com>`__ for version control.
 
--  `CMake 3.2+ <https://cmake.org/>`__
+-  `CMake 3.14+ <https://cmake.org/>`__
 -  `git 2.1+ <https://git-scm.com>`__
 
 Windows
@@ -57,13 +57,13 @@ To download NJOY21, simply ``git clone`` the repository. First move into the dir
 
    git clone https://github.com/njoy/NJOY21.git
 
-This will get the latest version of the code. If you are interested in a particular version, you need to specify the git branch corresponding to that version like this for version 1.2.0:
+This will get the latest version of the code. If you are interested in a particular version, you need to specify the git branch corresponding to that version like this for version 1.2.1:
 
 .. code-block:: console
 
-   git clone --branch v1.2.0 https://github.com/njoy/NJOY21.git
+   git clone --branch v1.2.1 https://github.com/njoy/NJOY21.git
 
-Please note that getting versions of NJOY21 prior to version 1.2.0 was different---and more convoluted. For information on how to do that see :ref:`this page <metaconfigureInstall>`.
+Please note that getting versions of NJOY21 prior to version 1.2.1 was different---and more convoluted. For information on how to do that see :ref:`this page <metaconfigureInstall>`.
 
 
 
