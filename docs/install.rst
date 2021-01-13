@@ -78,7 +78,7 @@ the source directory
    cd NJOY21
    mkdir bin
    cd bin
-   cmake ../
+   cmake -D CMAKE_BUILD_TYPE=Release ../
 
 Note this will require a connection to the internet as ``cmake`` command will download the necessary dependencies. 
 
@@ -125,6 +125,7 @@ For this configuration/build process, a connection to the internet is required a
    cd NJOY21
    mkdir bin
    cd bin
+   cmake -D CMAKE_BUILD_TYPE=Release ..
 
    # Build NJOY21
    make
