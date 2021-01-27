@@ -8,6 +8,8 @@ The biggest components of NJOY21 are called *modules*. These modules are those t
 
 `RECONR <https://docs.njoy21.io/projects/RECONR>`_
    Resonance reconstruction
+`Thermal Scattering <https://docs.njoy21.io/projects/thermalScattering>`_
+   Introduction to thermal scattering, `LEAPR <https://docs.njoy21.io/projects/thermalScattering/en/latest/LEAPR/index.html>`_, and `THERMR <https://docs.njoy21.io/projects/thermalScattering/en/latest/THERMR/index.html>`_.
 
 Modern NJOY Components
 ----------------------
