@@ -19,7 +19,7 @@ For the impatient
    # Configure the build process
    mkdir bin
    cd bin
-   cmake -D CMAKE_BUILD_TYPE=Release ..
+   cmake -D CMAKE_BUILD_TYPE=Release ../
 
    # Build NJOY21
    make
